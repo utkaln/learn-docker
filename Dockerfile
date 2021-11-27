@@ -11,4 +11,4 @@ RUN mkdir -p /home/app
 COPY . /home/app
 
 # 5 - CMD command is used as starting command of the docker image. In this case it is the first js file to be executed as part of the node project in example
-CMD ["node", "server.js"]
+CMD ["node", "/home/app/server.js"]
